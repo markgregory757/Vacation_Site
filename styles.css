@@ -1,6 +1,11 @@
 body {
+    max-width: max-content;
+    margin: auto;
     background-color: rgb(40, 58, 58);
     color: rgb(2, 17, 17);
+    background-image: url(images/backimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -17,6 +22,7 @@ p {
 }
 
 .top-nav {
+    color: aqua;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -30,6 +36,7 @@ p {
 
 .top-r-nav a {
     padding: 2%; 
+    color: aquamarine;
 } 
 
 
@@ -43,6 +50,7 @@ form {
 }
 
 .navigation a {
+    color:azure;
     text-align: center;
     padding: 14px 18px;
     font-size: 23px;   
@@ -53,6 +61,10 @@ form {
 }
 
 .dropdown {
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px  rgb(42, 8, 104) ;
+    color: rgb(10, 206, 75);
     position: relative;
     /* display: inline-block; */
     padding-bottom: 20px;
@@ -61,7 +73,7 @@ form {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #cac7cf;
+    background-color: #67297a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -70,19 +82,24 @@ form {
   }
   
   .dropdown:hover .dropdown-content {
+    padding: 15px;
     display: block;
-    left: 0;
+    left: 50px;
   }
   
   .notes {
-      color: blue;
-      float: right;
-      padding-right: 60px;
-    }
-    
-    .notes a {
+    background-image: url('images/dropimage.jpg');
+    background-repeat: no-repeat;
+    background-size: 320px 220px;
+    color: blue;
+    float: right;
+    padding-right: 60px;
+}
+
+.notes a {
         font-size: 25px;
         padding: 20px 20px;
+
     }
 
     .flex-container {
@@ -96,6 +113,7 @@ form {
     }
     
     .flex-child:first-child {
+        color: aliceblue;
         font-size: 25px;
         margin-right: 5%;
         margin-left: 15%
@@ -103,4 +121,12 @@ form {
 
     .flex-child {
         margin-right: -30%;
+    }
+
+    .flex-child a {
+        color: rgb(128, 184, 233);
+    }
+
+    .flex-child h2 {
+        color: floralwhite;
     }
