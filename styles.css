@@ -1,132 +1,189 @@
 body {
-    max-width: max-content;
-    margin: auto;
-    background-color: rgb(40, 58, 58);
-    color: rgb(2, 17, 17);
-    background-image: url(images/backimage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  max-width: max-content;
+  margin: auto;
+  background-color: rgb(40, 58, 58);
+  color: rgb(2, 17, 17);
+  background-image: url(images/faq.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    font-size: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif ;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    sans-serif;
 }
 
 p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px #0000;
 }
 
 #logo {
-    padding: 10;
+  padding: 10;
 }
 
 .top-nav {
-    color: aqua;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+  color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #041641;
+  background: rgba(6, 24, 71, 0.747);
 }
 
 .top-r-nav {
-    float: right;
-    padding: 12px 15px;
-    margin-right: 20px;
+  float: right;
+  padding: 12px 15px;
+  margin-right: 20px;
 }
 
 .top-r-nav a {
-    padding: 2%; 
-    color: aquamarine;
-} 
-
+  padding: 2%;
+  color: aquamarine;
+}
 
 form {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 
 .navigation {
-    margin-left: 13%;
-    padding-bottom: 2%;
+  padding-left: 13%;
+  padding-bottom: 2%;
+  background-color: #657da8;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navigation a {
-    color:azure;
-    text-align: center;
-    padding: 14px 18px;
-    font-size: 23px;   
+  color: azure;
+  text-align: center;
+  padding: 14px 18px;
+  font-size: 23px;
 }
 
 #overview {
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
 .dropdown {
-    font-weight: 100;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 2px  rgb(42, 8, 104) ;
-    color: rgb(10, 206, 75);
-    position: relative;
-    /* display: inline-block; */
-    padding-bottom: 20px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #67297a;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    
-  }
-  
-  .dropdown:hover .dropdown-content {
-    padding: 15px;
-    display: block;
-    left: 50px;
-  }
-  
-  .notes {
-    background-image: url('images/dropimage.jpg');
-    background-repeat: no-repeat;
-    background-size: 320px 220px;
-    color: blue;
-    float: right;
-    padding-right: 60px;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 2px 2px rgb(4, 18, 61);
+  color: rgb(10, 206, 75);
+  position: relative;
+  /* display: inline-block; */
+  padding-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #060c61;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  padding: 15px;
+  display: block;
+  left: 50px;
+}
+
+.notes {
+  background-image: url("images/dropimage.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 220px;
+  color: blue;
+  float: right;
+  padding-right: 60px;
 }
 
 .notes a {
-        font-size: 25px;
-        padding: 20px 20px;
+  font-size: 25px;
+  padding: 20px 20px;
+}
 
-    }
+.flex-container {
+  display: flex;
+}
 
-    .flex-container {
-        display: flex;
-    }
+.flex-child {
+  flex: 1;
+  /* border: 2px solid yellow; */
+}
 
-    .flex-child {
-        flex: 1;
-        /* border: 2px solid yellow; */
-       
-    }
-    
-    .flex-child:first-child {
-        color: aliceblue;
-        font-size: 25px;
-        margin-right: 5%;
-        margin-left: 15%
-      }
+.flex-child:first-child {
+  color: aliceblue;
+  font-size: 25px;
+  margin-right: 5%;
+  margin-left: 15%;
+  text-shadow: 3px 3px #0000;
+  background: rgba(0, 0, 0, 0.5);
+}
 
-    .flex-child {
-        margin-right: -30%;
-    }
+.flex-child {
+  margin-right: -30%;
+}
 
-    .flex-child a {
-        color: rgb(128, 184, 233);
-    }
+.flex-child a {
+  color: rgb(4, 33, 59);
+  background-color: aliceblue;
+}
 
-    .flex-child h2 {
-        color: floralwhite;
-    }
+.flex-child h2 {
+  color: floralwhite;
+}
+
+.flex-child p {
+  text-shadow: 2px 2px #0000;
+}
+
+.faq {
+  margin: auto;
+  width: 60%;
+  border: 3px double #9e98d4;
+  padding: 10px;
+}
+
+.faq h1 {
+    color: aliceblue;
+    text-shadow: 2px 4px navy;
+}
+
+.faq li {
+  font-size: 2em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(192, 207, 219);
+  text-shadow: 1px 1px rgb(153, 228, 238);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+li p {
+  font-size: 20px;
+  color: aqua;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  background-color: #67297a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.faq:hover .drop {
+  padding: 15px;
+  display: block;
+  left: 50px;
+}
+
+.review label{
+    float: right;
+    font-size: 25px;
+    color: rgb(11, 5, 99);
+    background-color: beige;
+}
